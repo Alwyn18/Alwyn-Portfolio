@@ -286,7 +286,7 @@ buttons.forEach(button => {
 
 
 // ==========================
-// Video Hover Play
+// Video Hover Play with Sound
 // ==========================
 
 document.addEventListener("DOMContentLoaded", () => {
@@ -297,13 +297,22 @@ document.addEventListener("DOMContentLoaded", () => {
 
         const card = video.closest(".video-card");
 
+        // Hover → play muted
         card.addEventListener("mouseenter", () => {
+            video.muted = true;
             video.play();
         });
 
+        // Click → unmute
+        card.addEventListener("click", () => {
+            video.muted = false;
+        });
+
+        // Leave → pause and reset
         card.addEventListener("mouseleave", () => {
             video.pause();
             video.currentTime = 0;
+            video.muted = true;
         });
 
     });
