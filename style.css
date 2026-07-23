@@ -291,31 +291,19 @@ header{
 }
 
 .navbar{
-
     display:flex;
-
     justify-content:space-between;
-
     align-items:center;
-
     gap:25px;
-
     padding:14px 28px;
-
     border-radius:999px;
 
-    background:rgba(15,15,15,.45);
+    background: transparent;
+    backdrop-filter: none;
+    -webkit-backdrop-filter: none;
 
-    backdrop-filter:blur(25px);
-
-    -webkit-backdrop-filter:blur(25px);
-
-    border:1px solid rgba(255,255,255,.08);
-
-    box-shadow:
-        0 12px 40px rgba(0,0,0,.35),
-        inset 0 1px 1px rgba(255,255,255,.08);
-
+    border: none;
+    box-shadow: none;
 }
 
 /*==========================
@@ -2307,21 +2295,12 @@ body.light-mode header{
     background:transparent;
 
 }
-
 body.light-mode .navbar{
-
-    background:rgba(255,255,255,.65);
-
-    backdrop-filter:blur(25px);
-
-    -webkit-backdrop-filter:blur(25px);
-
-    border:1px solid rgba(255,255,255,.8);
-
-    box-shadow:
-        0 15px 35px rgba(0,0,0,.08),
-        inset 0 1px 2px rgba(255,255,255,.8);
-
+    background: transparent;
+    backdrop-filter: none;
+    -webkit-backdrop-filter: none;
+    border: none;
+    box-shadow: none;
 }
 
 /* Logo Box */
