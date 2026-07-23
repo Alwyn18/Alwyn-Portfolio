@@ -511,14 +511,13 @@ header{
     margin-bottom:15px;
 
 }
-
 .hero h1{
 
     font-size:68px;
 
     font-family:"Poppins",sans-serif;
 
-    font-weight:800;
+    font-weight:900;
 
     line-height:1.05;
 
@@ -526,27 +525,24 @@ header{
 
     position:relative;
 
-    background:linear-gradient(
-        135deg,
-        rgba(255,255,255,.95),
-        rgba(255,255,255,.70),
-        rgba(255,255,255,.35),
-        rgba(255,255,255,.90)
-    );
+    color:#F8E5B9;
 
-    background-size:250%;
+    background:none;
 
-    background-clip:text;
-    -webkit-background-clip:text;
+    -webkit-background-clip:initial;
 
-    color:transparent;
-    -webkit-text-fill-color:transparent;
+    background-clip:initial;
 
-    animation:glassMove 8s linear infinite;
+    -webkit-text-fill-color:initial;
 
-    filter:drop-shadow(0 10px 25px rgba(255,255,255,.08));
+    animation:none;
 
-}
+    filter:none;
+
+    text-shadow:0 2px 6px rgba(0,0,0,.18);
+
+}       
+
 @keyframes glassMove{
 
     0%{
@@ -1137,21 +1133,29 @@ body::after{
 
     font-weight:900;
 
-    background:linear-gradient(
-        135deg,
-        #4b5563 0%,
-        #7eb3ff 35%,
-        #5b95f5 65%,
-        #ff8c00 100%
-    );
+background: linear-gradient(
+    135deg,
+    #F9EFCF 0%,
+    #F8E5B7 25%,
+    #F1DFAF 55%,
+    #E9D49C 80%,
+    #F8E5B7 100%
+);
 
-    -webkit-background-clip:text;
-    background-clip:text;
+background-size: 250%;
 
-    -webkit-text-fill-color:transparent;
+-webkit-background-clip: text;
+background-clip: text;
 
-    text-shadow:0 2px 12px rgba(0,0,0,.15);
+-webkit-text-fill-color: transparent;
 
+animation: glassMove 8s linear infinite;
+
+filter:
+    drop-shadow(0 0 2px rgba(248,229,183,.12))
+    drop-shadow(0 0 6px rgba(248,229,183,.06));
+
+text-shadow: none;
 }
 
 /*==========================
